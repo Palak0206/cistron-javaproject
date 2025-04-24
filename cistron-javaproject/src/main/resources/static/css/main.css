@@ -1,0 +1,339 @@
+/* General Reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edecda;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0d111f; /* Dark background */
+    border-style: solid;
+    border-color: #232946;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-btn:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #555; /* Divider between items */
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+
+.dropdown-menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    margin-bottom: 10px;
+    backdrop-filter: blur(10px); 
+}
+.text{
+    background-color: #afe4d8;
+    border-radius: 7%;
+    border-color:#c9e6df;
+    border-width: 7px;
+    border-style: solid;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section:nth-child(even) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #9464e9, #d0aff5);
+    
+}
+/* Home Section Styling */
+#home {
+    padding: 20px;
+    background-color: #f9f9f9dd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+   
+}
+
+#home h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;}
+    
+#home p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: bolder;
+}
+
+/* Form Styling */
+.protein-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.protein-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.protein-form textarea {
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 7px solid #a0b6e1;
+    border-radius: 4px;
+    resize: vertical;
+   
+}
+
+.protein-form textarea:focus {
+    outline: none;
+    border-color: #a05dd0;
+}
+
+.protein-form button {
+    background-color: #4135e5;
+    border-color: #5f55ea;
+    border-radius: 5%;
+    border-width:4px ;
+    border-style:solid;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.protein-form button:hover {
+    background-color: #7025d8;
+    font-weight: bold;
+    transform: scale(1.2); /* Makes the button 10% larger */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+
+    
+}
+.flashcard-container {
+    display: flex; /* Enables side-by-side layout */
+    gap: 1rem; /* Adds space between flashcards */
+    justify-content: center; /* Centers the flashcards horizontally */
+    align-items: center; /* Aligns the flashcards vertically */
+}
+
+.flashcard, .flashcard2,.flashcard3 {
+    width: 200px; /* Set a fixed width for flashcards */
+    height: 250px; /* Set a fixed height for flashcards */
+    perspective: 1000px; /* Enables 3D perspective for flip animation (optional) */
+    position: relative;
+    transition: transform 0.6s ease-in-out;
+    padding: 12px;
+    margin-left: 10px;
+}
+
+.flashcard-front{
+    background: url("../images/genomics.png") no-repeat center center/cover;
+}
+.flashcard2-front{
+    background: url("../images/proteomics.png") no-repeat center center/cover;
+}
+.flashcard3-front{
+    background: url("../images/system-biology.png") no-repeat center center/cover;
+}
+
+.flashcard-front, .flashcard-back,
+.flashcard2-front, .flashcard2-back,
+.flashcard3-front, .flashcard3-back{
+    width: 100%; /* Match the flashcard dimensions */
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the back when front is visible */
+    border: 7px solid #ccc; /* Optional: Border for visibility */
+    border-radius: 8px; /* Smooth rounded corners */
+    border-color: rgb(233, 233, 246);
+    border-style: solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #4981d4; /* Light background */
+
+}
+
+.flashcard-back, .flashcard2-back ,.flashcard3-back{
+    transform: rotateY(180deg); /* Flips the back face */
+    background-color: #c4b0e7;
+    max-height: 275px; /* Ensures the text doesn't overflow */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-right: 10px; /* Adds space to avoid text hiding behind scrollbar */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+    
+
+.flashcard:hover .flashcard-front,
+.flashcard2:hover .flashcard2-front,
+.flashcard3:hover .flashcard3-front{
+    transform: rotateY(180deg); /* Flip animation for hover */
+    background-color: #4981d4;
+    transition: transform 0.6s ease-in-out;
+
+}
+
+.flashcard:hover .flashcard-back,
+.flashcard2:hover .flashcard2-back,
+.flashcard3:hover .flashcard3-back{
+    transform: rotateY(0); /* Show back on hover */
+    transition: transform 0.6s ease-in-out;
+}
+
+.learnaboutus {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#24125a;
+}
+h2{
+    color:#6000b4;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #36149b;
+}
+
+a {
+    color: #42aaff;
+    text-decoration: none;
+}
+
+.read-more {
+    background-color: #1f00cc;
+    color: rgb(223, 212, 233);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    background-color: #9307f0;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 400px;
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown</title>
+    <link rel="stylesheet" href="http://localhost:8081/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Dropdown Button -->
+            <div class="dropdown">
+                <button class="dropdown-btn">☰</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#section1">Dropdown Item 1</a></li>
+                    <li><a href="#section2">Dropdown Item 2</a></li>
+                    <li><a href="#section3">Dropdown Item 3</a></li>
+                </ul>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#genetics">Statistics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="text">
+                <h1>DNA sequence Analysis</h1>
+            <p>Enter your DNA sequence below to analyze it.</p>
+        </div>
+        <form id="dnaForm" class="protein-form" action="/results" methord="get">
+            <label for="dnaInput"></label>
+            <textarea id="dnaInput" name="DNA-sequence" placeholder="Enter DNA sequence here..." rows="5" required></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                  <div class="flashcard-front">
+                  </div>
+                  <div class="flashcard-back">
+                    <h3>Genomics </h3>
+                    <p>The study of all the genes in an organism's DNA
+                     Can identify genes associated with disease
+                        Provides an overview of an organism's genetic instructions</p>
+                        <br>
+                        <a href="https://scienceprize.scilifelab.se/about-young-scientist-prize/genomics-proteomics-and-systems-biology-approaches/#:~:text=Proteomics%20is%20the%20study%20of,creating%20hundreds%20of%20different%20proteins.">Learn more</a>
+                  </div>
+                </div>
+                <div class="flashcard2">
+                    <div class="flashcard2-front">
+                      
+                    </div>
+                    <div class="flashcard2-back">
+
+                        <h3>Proteomics</h3>
+<p>The study of the proteins in an organism, including their structure and function 
+    Can identify proteins that are involved in disease 
+    Uses techniques like mass spectrometry and protein microarrays to detect and quantify proteins </p>
+                    </div>
+                </div>
+                <div class="flashcard3">
+                    <div class="flashcard3-front">
+                    </div>
+                    <div class="flashcard3-back">
+                        <h3>System biology</h3>
+                        <p>Focuses on the analysis of entire genomes, including DNA sequencing, gene identification, and understanding genetic variations.</p>
+                        <a href="Focuses on the analysis of entire genomes, including DNA sequencing, gene identification, and understanding genetic variations" >
+                            learn more
+                        </a> 
+                    </div>
+                </div>
+              </div>
+        </section>
+        <section id="about">
+            <div class="learnaboutus">
+                <div class="text-section">
+                    <h1>Your helping hand In bioinformatics: Cistron!</h1>
+                    <p>
+                        About Us
+Welcome to Cistron, your go-to platform for DNA sequence analysis. We are passionate about making bioinformatics accessible to everyone—students, researchers, and professionals alike.<br>
+
+<h2>Our Mission</h2>
+<p>At Cistron, we aim to simplify DNA sequence analysis by providing easy-to-use tools for translating DNA to proteins, calculating molecular properties, and visualizing biological insights.</p><br>
+
+<h2>What We Offer</h2>
+<p><strong>DNA to Protein Conversion :</strong> Translate DNA sequences into amino acids.
+
+<strong>Molecular Properties Calculation:</strong> Analyze molecular weight, hydrophilicity, and aromaticity.
+
+<strong>User-Friendly Interface:</strong> Our web-based tool makes bioinformatics intuitive and efficient.</p>
+                        
+                    </p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="image-section">
+                    <img src="analysis-pic.svg" alt="Web Development Illustration">
+                </div>
+            </div>
+        </section>
+        <section id="genetics">Explore Genetics
+            <div class="chart-holder">
+                <div class="atgc">
+                    <h2>DNA Base Content</h2>
+    <canvas id="dnaChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
