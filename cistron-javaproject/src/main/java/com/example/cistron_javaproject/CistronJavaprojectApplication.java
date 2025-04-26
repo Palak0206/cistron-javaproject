@@ -8,7 +8,6 @@ public class CistronJavaprojectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CistronJavaprojectApplication.class, args);
-		
 	}
 
 }

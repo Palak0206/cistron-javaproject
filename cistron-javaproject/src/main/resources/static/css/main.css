@@ -227,13 +227,13 @@ section:nth-child(even) {
 }
 
 .flashcard-front{
-    background: url("../images/genomics.png") no-repeat center center/cover;
+    background: url("/images/genomics.png") no-repeat center center/cover;
 }
 .flashcard2-front{
-    background: url("../images/proteomics.png") no-repeat center center/cover;
+    background: url("/images/proteomics.png") no-repeat center center/cover;
 }
 .flashcard3-front{
-    background: url("../images/system-biology.png") no-repeat center center/cover;
+    background: url("/images/system-biology.png") no-repeat center center/cover;
 }
 
 .flashcard-front, .flashcard-back,
@@ -329,11 +329,12 @@ a {
 .image-section {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    background: url("../images/analysis-pic.svg")no-repeat center center/cover;
 }
-
 .image-section img {
     width: 100%;
     max-width: 400px;
+    
 }
 

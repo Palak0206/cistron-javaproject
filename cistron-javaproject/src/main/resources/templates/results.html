@@ -37,5 +37,28 @@
             </div>
         </main>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page Loaded: Checking localStorage");
+
+            // Retrieve data from localStorage
+            let proteinChain = localStorage.getItem("proteinChain");
+            let aromaticity = localStorage.getItem("aromaticity");
+            let hydrophilicity = localStorage.getItem("hydrophilicity");
+            let molecularWeight = localStorage.getItem("molecularWeight");
+
+            // Debugging logs
+            console.log("Retrieved Protein Chain:", proteinChain);
+            console.log("Retrieved Aromaticity:", aromaticity);
+            console.log("Retrieved Hydrophilicity:", hydrophilicity);
+            console.log("Retrieved Molecular Weight:", molecularWeight);
+
+            // Handle missing data
+            document.getElementById("proteinChain").textContent = proteinChain ? proteinChain : "No Data Found";
+            document.getElementById("aromaticity").textContent = aromaticity ? aromaticity : "No Data Found";
+            document.getElementById("hydrophilicity").textContent = hydrophilicity ? hydrophilicity : "No Data Found";
+            document.getElementById("molecularWeight").textContent = molecularWeight ? molecularWeight : "No Data Found";
+        });
+    </script>
 </body>
 </html>
