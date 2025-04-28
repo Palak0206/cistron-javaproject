@@ -330,7 +330,6 @@ a {
     flex: 1;
     display: flex;
     justify-content: center;  
-    background: url("../images/analysis-pic.svg")no-repeat center center/cover;
 }
 .image-section img {
     width: 100%;

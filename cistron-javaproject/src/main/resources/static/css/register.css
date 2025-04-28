@@ -12,7 +12,7 @@
   
   .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    background: url("/images/loginbg2.png") no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
@@ -20,10 +20,23 @@
     text-align: center;
     padding: 2rem;
   }
+  .content{
+    background:linear-gradient(rgb(53, 53, 218,0.8),rgb(35, 143, 231,0.8));
+    border-radius: 7%;
+    border-style: solid;
+    border-color: #869ee1;
+    border-width: 7px;
+    max-width: 90%;
+    max-height: 75%;
+    padding: 3cm;
+
+  }
   
   .hero .content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    opacity: 100%;
+
   }
   
   .hero .content p {
@@ -54,70 +67,6 @@
     align-items: center;
   }
   
-  .register-form {
-    background-color: #ffffff;
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
   
-  .register-form h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #1e3a8a;
-  }
   
-  .register-form label {
-    display: block;
-    margin: 0.75rem 0 0.25rem;
-    font-weight: 600;
-    color: #374151;
-  }
-  
-  .register-form input {
-    width: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .register-form input:focus {
-    border-color: #3b82f6;
-    outline: none;
-  }
-  
-  .register-form button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #3b82f6;
-    color: #ffffff;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .register-form button:hover {
-    background-color: #2563eb;
-  }
-  
-  .login-link {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .login-link a {
-    color: #2563eb;
-    text-decoration: none;
-  }
-  
-  .login-link a:hover {
-    text-decoration: underline;
-  }
   

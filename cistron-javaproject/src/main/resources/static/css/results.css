@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background: url('mainbg1.png') no-repeat center center/cover;
+    background: url('/css/images/mainbg1.png') no-repeat center center/cover;
     margin: 0;
     padding: 0;
     color: #333;
@@ -32,7 +32,6 @@ header h1 {
 }
 
 .card {
-    background-color: #fff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,6 +65,7 @@ header h1 {
     color: #444;
     word-wrap: break-word;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

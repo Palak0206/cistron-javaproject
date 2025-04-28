@@ -11,52 +11,11 @@
     <div class="content">
       <h1>Welcome to DNA Insight</h1>
       <p>Unlock the secrets of your genetic code. Start your journey into personalized DNA analysis today.</p>
-      <a href="#register" class="scroll-button">Get Started</a>
+      <a href="/main" class="scroll-button">Get Started</a>
     </div>
   </section>
 
   <section class="register-section" id="register">
-    <form class="register-form" action="/register" method="POST">
-      <h2>Register for DNA Analysis</h2>
-
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required/>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required/>
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required/>
-
-      <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" name="confirm-password" required/>
-
-      <button type="submit">Create Account</button>
-
-      <p class="login-link">Already have an account? <a href="/login">Login here</a></p>
-    </form>
-  </section>
-  <script>
-    const form = document.querySelector('.register-form');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-  
-      const data = {
-        name: form.name.value,
-        email: form.email.value,
-        password: form.password.value
-      };
-  
-      const response = await fetch('http://localhost:8080/register', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
-      });
-  
-      const result = await response.text();
-      alert(result);
-    });
-  </script>
-  
+   
 </body>
 </html>
