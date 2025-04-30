@@ -35,35 +35,35 @@
                     <p class="chain" id="proteinChain">Loading...</p>
                 </div>
                 <div class="card">
-                    <h2>Original Sequence:</h2> <p><span th:text="${sequence}"></span></p>
-                    <h2>Result: </h2><p><span th:text="${result}"></span></p>
+                    
 
                 </div>
             </div>
         </main>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("Page Loaded: Checking localStorage");
-
-            // Retrieve data from localStorage
-            let proteinChain = localStorage.getItem("proteinChain");
-            let aromaticity = localStorage.getItem("aromaticity");
-            let hydrophilicity = localStorage.getItem("hydrophilicity");
-            let molecularWeight = localStorage.getItem("molecularWeight");
-
-            // Debugging logs
-            console.log("Retrieved Protein Chain:", proteinChain);
-            console.log("Retrieved Aromaticity:", aromaticity);
-            console.log("Retrieved Hydrophilicity:", hydrophilicity);
-            console.log("Retrieved Molecular Weight:", molecularWeight);
-
-            // Handle missing data
-            document.getElementById("proteinChain").textContent = proteinChain ? proteinChain : "No Data Found";
-            document.getElementById("aromaticity").textContent = aromaticity ? aromaticity : "No Data Found";
-            document.getElementById("hydrophilicity").textContent = hydrophilicity ? hydrophilicity : "No Data Found";
-            document.getElementById("molecularWeight").textContent = molecularWeight ? molecularWeight : "No Data Found";
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Results page loaded.");
+        
+            // Get values from localStorage
+            const proteinChain = localStorage.getItem("proteinChain");
+            const aromaticity = localStorage.getItem("aromaticity");
+            const hydrophilicity = localStorage.getItem("hydrophilicity");
+            const molecularWeight = localStorage.getItem("molecularWeight");
+        
+            // Log values for debugging
+            console.log("Protein Chain:", proteinChain);
+            console.log("Aromaticity:", aromaticity);
+            console.log("Hydrophilicity:", hydrophilicity);
+            console.log("Molecular Weight:", molecularWeight);
+        
+            // Set values in the HTML using the right IDs
+            document.getElementById("proteinChain").textContent = proteinChain || "No data";
+            document.getElementById("aromaticity").textContent = aromaticity || "No data";
+            document.getElementById("hydrophilicity").textContent = hydrophilicity || "No data";
+            document.getElementById("molecularWeight").textContent = molecularWeight || "No data";
+            localStorage.clear();
         });
-    </script>
+        </script>
 </body>
 </html>

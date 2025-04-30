@@ -337,3 +337,43 @@ a {
     
 }
 
+/* Section styling */
+#analysis {
+    padding: 40px;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #analysis h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+  
+  .cards-keeper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .cards {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  

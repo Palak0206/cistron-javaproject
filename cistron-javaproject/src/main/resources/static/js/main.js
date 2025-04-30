@@ -1,4 +1,4 @@
-     
+
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault();  // Prevent page refresh
         
@@ -28,6 +28,7 @@
             console.log("Aromaticity:", aromaticity);
         
             // Redirect to results page
+            console.log(localStorage.getItem("proteinChain"));  // Should print something like "MTHQ..."
             window.location.href = "results";
         });
         
